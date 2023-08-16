@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+/* Container dos botões */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Alinha os botões nas extremidades */
+    margin-top: 10px; /* Espaçamento superior */
+    margin-right: 10%; /* Espaçamento direita */
+    margin-left: 10%; /* Espaçamento esquerda */
+}
+
+/* Botão de Adicionar */
+.button-submit-adicionar {
+    width: auto; /* Largura automática para ajustar o conteúdo */
+    height: 40px;
+    border-radius: .3rem;
+    background: #ec1b1b;
+    color: #ffffff;
+    transition: .4s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--f-600);
+    border: none;
+    padding: 0 10px; 
+    cursor: pointer;
+}
+
+/* Botão de Registro */
+.button-submit-registro {
+    width: auto; 
+    height: 40px;
+    border-radius: .3rem;
+    background: #2276e6;
+    color: #ffffff;
+    transition: .4s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--f-600);
+    border: none;
+    padding: 0 10px; 
+}
+
+.button-submit-registro:hover{
+    transition: 0.2s;
+    background: #63666b;
+
+}
+
+.button-submit-registro svg,
+.button-submit-adicionar svg {
+    margin-left: 0.3rem; 
+    align-items: center;
+    height: 60px;
+}
+
+button {
+    padding: 10px;
+    background-color: #ff0000c9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: .3rem;
+}
+
+button:hover {
+    transition: .2s;
+    background-color: #c02d2d;
+}
+

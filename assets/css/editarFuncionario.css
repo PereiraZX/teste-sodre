@@ -1,0 +1,400 @@
+@import url('../css/global.css');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-white);
+}
+
+.edit-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-light);
+    width: 700px;
+    height: 600px;
+    display: grid;
+    border-radius: .3rem;
+}
+
+.edit-container #edit-funcionario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#edit-funcionario .title {
+    font-size: var(--f-s-2);
+    color: #464646;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+#edit-funcionario .input-group {
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+#edit-funcionario .input-group .input-block {
+    margin-bottom: 1rem;
+    height: 45px;
+    width: 600px;
+}
+
+#edit-funcionario .input-block .input-container {
+    display: flex;
+    padding: 1rem 0;
+    border: 1px solid var(--border-light);
+    border-radius: .1rem;
+    align-items: center;
+    height: 40px;
+}
+
+#edit-funcionario .input-container .icon {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid var(--border-light);
+}
+
+#edit-funcionario .input-container .icon>svg {
+    color: #a7a7a7;
+    height: 1.4rem;
+}
+
+#edit-funcionario .input-block .input-container input {
+    flex: 1;
+    padding: 0 1rem;
+    background: none;
+    color: var(--color-dark);
+}
+
+
+#edit-funcionario .possui-cadastro {
+    color: var(--color-dark);
+    font-size: .8rem;
+    color: #a7a7a7;
+}
+
+#edit-funcionario .possui-cadastro a {
+    font-size: .8rem;
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+
+#edit-funcionario .button-submit-cadastro {
+    width: 100%;
+    height: 30px;
+    border-radius: .3rem;
+    background: var(--color-primary);
+    color: #ffffff;
+    transition: .4s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--f-600);
+
+}
+
+
+#edit-funcionario .button-submit-cadastro:hover {
+    transition: .3s ease-out;
+    cursor: pointer;
+    opacity: .8;
+}
+
+#edit-funcionario .button-submit-voltar {
+    width: 100%;
+    height: 30px;
+    border-radius: .3rem;
+    background: #f5b506;
+    color: #ffffff;
+    transition: .4s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--f-600);
+    margin-top: 10px;
+
+}
+
+
+#edit-funcionario .button-submit-voltar:hover {
+    transition: .3s ease-out;
+    cursor: pointer;
+    opacity: .8;
+}
+
+
+
+
+
+.edit-container .right-side-container {
+    display: flex;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary);
+    border-radius: .3rem;
+}
+
+
+.edit-container .right-side-container>div {
+    text-align: center;
+    color: #ffffff;
+}
+
+.edit-container .right-side-container .title {
+    font-size: var(--f-s-3);
+    text-transform: uppercase;
+}
+
+.edit-container .right-side-container .logo-cadastro {
+    height: 14rem;
+    margin: 1rem 0;
+}
+
+.edit-container .right-side-container .text-info {
+    width: 250px;
+    margin: 0 auto;
+}
+
+.edit-container .right-side-container .text-info>span {
+    font-weight: var(--f-800);
+}
+
+.select-container {
+    position: relative;
+}
+
+.select-container select {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: white;
+    color: var(--color-dark);
+    font-size: 1rem;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.select-container {
+    position: relative;
+}
+
+
+
+.select-container::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #a7a7a7;
+    pointer-events: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .edit-container {
+        width: 90vw;
+        height: auto;
+        margin: 2rem;
+    }
+
+
+    .edit-container .title {
+        font-size: var(--f-s-2);
+    }
+
+
+    .input-block .input-container input {
+        width: 100%;
+    }
+
+
+    .button-submit-cadastro,
+    .button-submit-voltar {
+        height: 40px;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+
+
+    .right-side-container .logo-cadastro {
+        height: 10rem;
+    }
+
+
+    .right-side-container .text-info {
+        width: 80%;
+    }
+}
+
+
+
+@media only screen and (max-width: 690px) {
+    body {
+        font-size: 20px;
+    }
+
+    .edit-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--border-light);
+        width: 600px;
+        height: 600px;
+        display: grid;
+        border-radius: .3rem;
+    }
+
+    .edit-container .title {
+        font-size: var(--f-s-2);
+    }
+
+    .input-block .input-container input {
+        width: 100%;
+    }
+
+
+    .button-submit-cadastro,
+    .button-submit-voltar {
+        height: 40px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        max-width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    .input-container {
+        width: 70%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #edit-funcionario .input-container input {
+        font-size: 1.2rem;
+    }
+
+    .select-container select {
+        width: 100%;
+        padding: 0.5rem;
+        background-color: var(--color-white);
+        color: var(--color-dark);
+        font-size: 1.1rem;
+        border: 0.5px solid #d1d0d0;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    }
+
+
+    .select-container select option {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+        background-color: var(--color-white);
+        color: var(--color-dark);
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    body {
+        font-size: 17px;
+    }
+
+    .edit-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid var(--border-light);
+        width: 400px;
+        height: 600px;
+        display: grid;
+        border-radius: .3rem;
+    }
+
+
+    .edit-container .title {
+        font-size: var(--f-s-2);
+    }
+
+
+    .input-block .input-container input {
+        width: 100%;
+    }
+
+    .button-submit-cadastro,
+    .button-submit-voltar {
+        height: 40px;
+        font-size: 1.1rem;
+        margin-top: 10px;
+        max-width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+
+    .input-container {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #edit-funcionario .input-container input {
+        font-size: 1rem;
+    }
+
+    .select-container select {
+        width: 100%;
+        padding: 0.5rem;
+        background-color: var(--color-white);
+        color: var(--color-dark);
+        font-size: 1.1rem;
+        border: 0.5px solid #d1d0d0;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+
+
+    }
+
+    .select-container select option {
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+        background-color: var(--color-white);
+        color: var(--color-dark);
+    }
+}
