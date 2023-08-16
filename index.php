@@ -4,7 +4,7 @@ include_once 'api/conexao/conn.php';
 
 $sql = "SELECT f.id, f.nome_funcionario AS funcionario, c.nome_cargo AS cargo, c.salario AS salario
         FROM funcionario AS f  
-        JOIN cargo AS c ON f.id_cargo = c.id
+        JOIN cargo AS c ON f.id_cargo = c.id;
         ORDER BY id DESC;";
 $resultado = $pdo->query($sql);
 $funcionarios = $resultado->fetchAll(PDO::FETCH_ASSOC);
